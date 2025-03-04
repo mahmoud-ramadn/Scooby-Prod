@@ -174,8 +174,6 @@ const CarouselItem = React.forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
 >(({ className, ...props }, ref) => {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  // const { orientation } = useCarousel();
 
   return (
     <div
