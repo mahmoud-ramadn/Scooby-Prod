@@ -6,45 +6,31 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from ".
 import { addDays ,format} from "date-fns"
 import React from "react"
 import { Calendar } from "./calendar"
-import Box from "./box"
 function EasyForYou() {
       const [date, setDate] = React.useState<Date>()
     
-    const boxServicesData = [
-        {
-            title: 'Veterinary',
-            img: '/box/veterinary 1.webp'
-        },
-        {
-            title: 'Day Care',
-            img: '/box/dog (2) 1.webp'
-        },
-        {
-            title: 'Supplies',
-            img: '/box/pet-supplies 1.webp'
-        },
-        {
-            title: 'Adoption',
-            img: '/box/adoption 1.webp'
-        },
-        {
-            title: 'More',
-            img: '/box/pets 1.webp'
-        },
-    ]
-
-      React.useEffect(() => {
-        const scrollContainer = document.querySelector('.scroll-container');
-        if (scrollContainer) {
-            scrollContainer.addEventListener('wheel', (event) => {
-                event.preventDefault();
-                scrollContainer.scrollBy({
-                    left: event.deltaY < 0 ? -100 : 100,
-                    behavior: 'smooth'
-                });
-            });
-        }
-    }, []);
+    // const boxServicesData = [
+    //     {
+    //         title: 'Veterinary',
+    //         img: '/box/veterinary 1.webp'
+    //     },
+    //     {
+    //         title: 'Day Care',
+    //         img: '/box/dog (2) 1.webp'
+    //     },
+    //     {
+    //         title: 'Supplies',
+    //         img: '/box/pet-supplies 1.webp'
+    //     },
+    //     {
+    //         title: 'Adoption',
+    //         img: '/box/adoption 1.webp'
+    //     },
+    //     {
+    //         title: 'More',
+    //         img: '/box/pets 1.webp'
+    //     },
+    // ]
   return (
     <div className="  relative bg-gray-custom  pt-40 pb-12">
           {/* <div className="   absolute   -top-[10px]   overflow-x-scroll left-1/2  -translate-x-1/2  shadow-none   w-full flex items-center  justify-center gap-8  ">
